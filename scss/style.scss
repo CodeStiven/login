@@ -95,6 +95,10 @@ body {
   border-bottom: 2px solid $color;
   outline: none;
   position: relative;
+  &:focus {
+    border-bottom: 2px solid $color-btn;
+    transition: 0.3s ease;
+  }
 }
 
 .login__link {
@@ -127,5 +131,46 @@ body {
   &:hover {
     cursor: pointer;
     background-position: right;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+  .login__link {
+    color: $color-btn;
+  }
+  .login__container {
+    margin: 8px 0;
+  }
+  .phone__avatar {
+    width: 400px;
+  }
+  .login__title {
+    font: size 2.4rem;
+    margin: 8px 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .login__container {
+    grid-template-columns: 1fr;
+  }
+  .wave__background {
+    display: none;
+  }
+  .phone__avatar {
+    display: none;
+  }
+  .login__container {
+    justify-content: center;
+    width: 360px;
   }
 }
