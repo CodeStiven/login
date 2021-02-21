@@ -210,6 +210,7 @@ body {
   .login__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .wave__background {
     display: none;

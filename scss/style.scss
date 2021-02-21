@@ -162,6 +162,7 @@ body {
 @media screen and (max-width: 900px) {
   .login__container {
     grid-template-columns: 1fr;
+    margin: 0 auto;
   }
   .wave__background {
     display: none;
