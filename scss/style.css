@@ -16,6 +16,14 @@ body {
   font-weight: 700;
 }
 
+.wave__background {
+  height: 100vh;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: -10;
+}
+
 .login__container {
   display: -ms-grid;
   display: grid;
@@ -32,6 +40,18 @@ body {
   grid-gap: 7rem;
   padding: 0 2rem;
   position: relative;
+}
+
+.phone__avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .img__phone {
